@@ -1,0 +1,8 @@
+Button #Row {
+    LayoutMode: Left;
+    Anchor: (Height: 28, Bottom: 4);
+    Style: (
+        Default: (Background: #b03a3a(0.28)),
+        Hovered: (Background: #b03a3a(0.42))
+    );
+}

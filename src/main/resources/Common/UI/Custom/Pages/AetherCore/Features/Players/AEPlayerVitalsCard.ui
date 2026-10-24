@@ -1,0 +1,33 @@
+Group #Card {
+    LayoutMode: Top;
+    FlexWeight: 1;
+    Background: #ffffff(0.04);
+    Padding: (Horizontal: 16, Vertical: 14);
+    Anchor: (Right: 12);
+
+    Label #HealthLabel {
+        Anchor: (Height: 16);
+        Text: "";
+        Style: (FontSize: 12, TextColor: #ffffff(0.7));
+    }
+
+    ProgressBar #HealthBar {
+        Anchor: (Height: 10, Top: 4, Bottom: 14);
+        Value: 0;
+        Bar: #d64545;
+        Background: #ffffff(0.1);
+    }
+
+    Label #StaminaLabel {
+        Anchor: (Height: 16);
+        Text: "";
+        Style: (FontSize: 12, TextColor: #ffffff(0.7));
+    }
+
+    ProgressBar #StaminaBar {
+        Anchor: (Height: 10, Top: 4);
+        Value: 0;
+        Bar: #d6c445;
+        Background: #ffffff(0.1);
+    }
+}

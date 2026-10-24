@@ -1,0 +1,4 @@
+Group #Dot {
+    Anchor: (Width: 12, Height: 12, Left: 6);
+    Background: (Color: #dc3d3d);
+}

@@ -1,0 +1,18 @@
+$Common = "../../../../Common.ui";
+
+$Common.@SimpleContainer #View {
+    LayoutMode: Top;
+    FlexWeight: 1;
+
+    Group #Chain {
+        LayoutMode: TopScrolling;
+        ScrollbarStyle: $Common.@DefaultScrollbarStyle;
+        FlexWeight: 1;
+        Anchor: (Bottom: 12);
+    }
+
+    Group #Pagination {
+        LayoutMode: CenterMiddle;
+        Anchor: (Height: 54);
+    }
+}

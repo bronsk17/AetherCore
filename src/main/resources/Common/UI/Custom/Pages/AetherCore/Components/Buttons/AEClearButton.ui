@@ -1,0 +1,15 @@
+Button #ClearButton {
+    Anchor: (Width: 32, Height: 36);
+    Style: (
+        Default: (Background: #3a3f4a),
+        Hovered: (Background: #7a2f2f),
+        Pressed: (Background: #8a3535),
+        Disabled: (Background: #2a2d33)
+    );
+
+    Label #ClearText {
+        Anchor: (Full: 0);
+        Text: "X";
+        Style: (FontSize: 13, RenderBold: true, TextColor: #ffffff(0.75), HorizontalAlignment: Center, VerticalAlignment: Center);
+    }
+}

@@ -1,0 +1,66 @@
+$Common = "../../../../Common.ui";
+
+$Common.@PageOverlay {
+    LayoutMode: Middle;
+    Anchor: (Full: 0);
+
+    $Common.@DecoratedContainer {
+        Anchor: (Width: 460);
+
+        #Title {
+            Label #TitleLabel {
+                Anchor: (Height: 38);
+                Padding: (Horizontal: 19);
+                Style: (FontSize: 15, RenderBold: true, RenderUppercase: true, TextColor: #b4c8c9, VerticalAlignment: Center);
+            }
+        }
+
+        #Content {
+            LayoutMode: Top;
+            Padding: (Full: 20);
+
+            Group {
+                LayoutMode: Left;
+                Anchor: (Height: 38, Bottom: 10);
+
+                Label {
+                    Anchor: (Width: 100);
+                    Text: "World";
+                    Style: (FontSize: 13, TextColor: #96a9be, VerticalAlignment: Center);
+                }
+
+                Group #WorldInput {
+                    LayoutMode: Left;
+                    FlexWeight: 1;
+                }
+            }
+
+            Group {
+                LayoutMode: Left;
+                Anchor: (Height: 38, Bottom: 16);
+
+                Label {
+                    Anchor: (Width: 100);
+                    Text: "Expires in";
+                    Style: (FontSize: 13, TextColor: #96a9be, VerticalAlignment: Center);
+                }
+
+                Group #ExpiresInput {
+                    LayoutMode: Left;
+                    FlexWeight: 1;
+                }
+            }
+
+            Group {
+                LayoutMode: Center;
+                Anchor: (Top: 4);
+
+                Group #RemoveButton {}
+
+                Group #SaveButton {}
+
+                Group #CancelButton {}
+            }
+        }
+    }
+}

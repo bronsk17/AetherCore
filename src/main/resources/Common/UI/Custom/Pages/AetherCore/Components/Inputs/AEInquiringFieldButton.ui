@@ -1,0 +1,14 @@
+Button #FieldButton {
+    Anchor: (Height: 36);
+    Style: (
+        Default: (Background: #ffffff(0.05)),
+        Hovered: (Background: #ffffff(0.1))
+    );
+
+    Label #Text {
+        Anchor: (Full: 0);
+        Padding: (Horizontal: 12);
+        Text: "";
+        Style: (FontSize: 13, TextColor: #ffffff(0.9), VerticalAlignment: Center);
+    }
+}

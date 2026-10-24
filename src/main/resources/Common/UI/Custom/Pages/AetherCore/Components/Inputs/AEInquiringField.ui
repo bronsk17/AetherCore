@@ -1,0 +1,14 @@
+Group #Row {
+    LayoutMode: Left;
+    FlexWeight: 1;
+    Anchor: (Height: 36);
+
+    Group #Field {
+        LayoutMode: Top;
+        FlexWeight: 1;
+    }
+
+    Group #Clear {
+        Anchor: (Width: 32, Height: 36, Left: 6);
+    }
+}

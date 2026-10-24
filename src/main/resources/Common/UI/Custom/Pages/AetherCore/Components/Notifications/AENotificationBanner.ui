@@ -1,0 +1,9 @@
+Group #Banner {
+    LayoutMode: Middle;
+    Anchor: (Height: 48);
+    Background: #1f8a4c;
+
+    Label #Text {
+        Style: (FontSize: 14, TextColor: #ffffff, HorizontalAlignment: Center, VerticalAlignment: Center);
+    }
+}

@@ -1,0 +1,11 @@
+$Common = "../../../../Common.ui";
+
+Button #Button {
+    Anchor: (Width: 40, Height: 40, Right: 6);
+    Style: $Common.@SecondaryButtonStyle;
+    Label #Label {
+        Anchor: (Full: 0);
+        Text: "-";
+        Style: $Common.@SecondaryButtonLabelStyle;
+    }
+}

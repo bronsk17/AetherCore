@@ -1,0 +1,37 @@
+$Common = "../../../../Common.ui";
+
+$Common.@PageOverlay {
+    LayoutMode: Middle;
+    Anchor: (Full: 0);
+
+    $Common.@DecoratedContainer {
+        Anchor: (Width: 500);
+
+        #Title {
+            Label #TitleLabel {
+                Anchor: (Height: 38);
+                Padding: (Horizontal: 19);
+                Style: (FontSize: 15, RenderBold: true, RenderUppercase: true, TextColor: #b4c8c9, VerticalAlignment: Center);
+            }
+        }
+
+        #Content {
+            LayoutMode: Top;
+            Padding: (Full: 20);
+
+            Label #MessageLabel {
+                Anchor: (Bottom: 20, Horizontal: 4);
+                Style: (FontSize: 14, TextColor: #ffffff(0.8), Wrap: true, VerticalAlignment: Center);
+            }
+
+            Group {
+                LayoutMode: Center;
+                Anchor: (Top: 8);
+
+                Group #ConfirmButton {}
+
+                Group #CancelButton {}
+            }
+        }
+    }
+}

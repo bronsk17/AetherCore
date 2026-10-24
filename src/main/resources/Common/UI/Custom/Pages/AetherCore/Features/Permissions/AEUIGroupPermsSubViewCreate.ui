@@ -1,0 +1,27 @@
+Group #View {
+    LayoutMode: Top;
+    FlexWeight: 1;
+
+    Group {
+        LayoutMode: Left;
+        Anchor: (Height: 38, Bottom: 12);
+
+        Label {
+            Anchor: (Width: 130);
+            Text: "Name";
+            Style: (FontSize: 13, TextColor: #96a9be, VerticalAlignment: Center);
+        }
+
+        Group #NameInput {
+            LayoutMode: Left;
+            FlexWeight: 1;
+        }
+    }
+
+    Group #Buttons {}
+
+    Group #Table {
+        LayoutMode: Top;
+        FlexWeight: 1;
+    }
+}

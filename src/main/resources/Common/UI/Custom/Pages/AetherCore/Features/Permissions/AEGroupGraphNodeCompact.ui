@@ -1,0 +1,21 @@
+Button #Node {
+    LayoutMode: Top;
+    Anchor: (Width: 110, Height: 52, Bottom: 8);
+    Padding: (Full: 8);
+    Style: (
+        Default: (Background: #2a3a52(0.6)),
+        Hovered: (Background: #2a3a52(0.85))
+    );
+
+    Label #Name {
+        Anchor: (Height: 16);
+        Text: "";
+        Style: (FontSize: 11, RenderBold: true, TextColor: #ffffff(0.9));
+    }
+
+    Label #Detail {
+        Anchor: (Height: 14, Top: 3);
+        Text: "";
+        Style: (FontSize: 9, TextColor: #96a9be);
+    }
+}

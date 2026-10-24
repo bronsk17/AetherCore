@@ -1,0 +1,26 @@
+Button #Tag {
+    LayoutMode: Left;
+    Anchor: (Height: 40, Bottom: 4);
+    Padding: (Horizontal: 8);
+    Style: (
+        Default: (Background: #7a1f1f(0.55)),
+        Hovered: (Background: #7a1f1f(0.8))
+    );
+
+    Group #AvatarBox {
+        Anchor: (Width: 28, Height: 28, Right: 8);
+        Background: #5c1717;
+
+        Label #Initial {
+            Anchor: (Full: 0);
+            Text: "?";
+            Style: (HorizontalAlignment: Center, VerticalAlignment: Center, FontSize: 13, RenderBold: true);
+        }
+    }
+
+    Label #Name {
+        Anchor: (Right: 8);
+        Text: "Player";
+        Style: (FontSize: 13, VerticalAlignment: Center, TextColor: #ffffff(0.9));
+    }
+}

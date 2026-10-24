@@ -1,0 +1,15 @@
+Group #Card {
+    LayoutMode: Top;
+    Background: #ffffff(0.04);
+    Padding: (Full: 14);
+
+    Label #Label {
+        Anchor: (Height: 22, Bottom: 8);
+        Style: (FontSize: 16, RenderBold: true, TextColor: #b4c8c9);
+    }
+
+    Group #Input {
+        LayoutMode: Left;
+        Anchor: (Height: 36);
+    }
+}

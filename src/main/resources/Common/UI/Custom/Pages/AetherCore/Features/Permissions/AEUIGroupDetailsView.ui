@@ -1,0 +1,39 @@
+Group #DetailsShell {
+    LayoutMode: Top;
+    FlexWeight: 1;
+
+    Group #Title {
+        LayoutMode: CenterMiddle;
+        Anchor: (Height: 32, Bottom: 16);
+
+        Label #Main {
+            Text: "";
+            Style: (FontSize: 18, RenderBold: true, TextColor: #ffffff(0.9), VerticalAlignment: Center);
+        }
+
+        Group #Id {
+            Anchor: (Left: 8, Height: 32);
+        }
+    }
+
+    Group #SubTabs {
+        LayoutMode: CenterMiddle;
+        Anchor: (Height: 44, Bottom: 24);
+    }
+
+    Group #Details {
+        LayoutMode: Top;
+        FlexWeight: 1;
+    }
+
+    Group #Footer {
+        LayoutMode: Right;
+        Anchor: (Height: 44, Top: 12);
+
+        Group #DeleteButton {}
+
+        Group #SaveButton {}
+
+        Group #CancelButton {}
+    }
+}

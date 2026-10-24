@@ -1,0 +1,53 @@
+$Common = "../../Common.ui";
+
+$Common.@PageOverlay {
+    LayoutMode: CenterMiddle;
+
+    $Common.@DecoratedContainer {
+        @ContentPadding = Padding(Full: 0);
+        Anchor: (Width: 1600, Height: 900);
+
+        #Title {
+            $Common.@Title {
+                @Text = "AetherCore";
+            }
+        }
+
+        #Content {
+            LayoutMode: Left;
+
+            Group #Sidebar {
+                Anchor: (Width: 180, Right: 16);
+
+                $Common.@SimpleContainer #Panel {
+                    LayoutMode: Top;
+                    Anchor: (Full: 0);
+
+                    Group #History {
+                        LayoutMode: CenterMiddle;
+                        Anchor: (Height: 40, Bottom: 16, Right: 0);
+                    }
+
+                    Group #Tabs {
+                        LayoutMode: Top;
+                        FlexWeight: 1;
+                    }
+                }
+            }
+
+            Group #TabContent {
+                LayoutMode: Top;
+                FlexWeight: 1;
+                Padding: (Top: 17, Right: 17, Bottom: 17);
+            }
+        }
+    }
+}
+
+Group #Overlay {
+    Anchor: (Full: 0);
+}
+
+Group #Notification {
+    Anchor: (Top: 0, Left: 0, Right: 0, Height: 48);
+}

@@ -1,0 +1,64 @@
+$Common = "../../../../Common.ui";
+
+$Common.@PageOverlay {
+    LayoutMode: Middle;
+    Anchor: (Full: 0);
+
+    $Common.@DecoratedContainer {
+        Anchor: (Width: 500);
+
+        #Title {
+            Label #TitleLabel {
+                Anchor: (Height: 38);
+                Padding: (Horizontal: 19);
+                Style: (FontSize: 15, RenderBold: true, RenderUppercase: true, TextColor: #b4c8c9, VerticalAlignment: Center);
+            }
+        }
+
+        #Content {
+            LayoutMode: Top;
+            Padding: (Full: 20);
+
+            Group {
+                LayoutMode: Left;
+                Anchor: (Bottom: 12, Height: 36);
+
+                Label {
+                    Anchor: (Width: 90);
+                    Text: "Reason";
+                    Style: (FontSize: 13, TextColor: #96a9be, VerticalAlignment: Center);
+                }
+
+                Group #ReasonInput {
+                    LayoutMode: Left;
+                    FlexWeight: 1;
+                }
+            }
+
+            Group {
+                LayoutMode: Left;
+                Anchor: (Bottom: 20, Height: 36);
+
+                Label {
+                    Anchor: (Width: 90);
+                    Text: "Duration";
+                    Style: (FontSize: 13, TextColor: #96a9be, VerticalAlignment: Center);
+                }
+
+                Group #DurationInput {
+                    LayoutMode: Left;
+                    FlexWeight: 1;
+                }
+            }
+
+            Group {
+                LayoutMode: Center;
+                Anchor: (Top: 8);
+
+                Group #ConfirmButton {}
+
+                Group #CancelButton {}
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+$Common = "../../../../Common.ui";
+
+$Common.@PageOverlay {
+    LayoutMode: Middle;
+    Anchor: (Full: 0);
+
+    $Common.@DecoratedContainer {
+        Anchor: (Width: 480, Height: 560);
+
+        #Title {
+            Label #TitleLabel {
+                Anchor: (Height: 38);
+                Padding: (Horizontal: 19);
+                Style: (FontSize: 15, RenderBold: true, RenderUppercase: true, TextColor: #b4c8c9, VerticalAlignment: Center);
+            }
+        }
+
+        #Content {
+            LayoutMode: Top;
+            Padding: (Full: 20);
+
+            Group #Search {
+                Anchor: (Height: 38, Bottom: 10);
+            }
+
+            Group #Results {
+                LayoutMode: TopScrolling;
+                ScrollbarStyle: $Common.@DefaultScrollbarStyle;
+                Anchor: (Height: 180, Bottom: 10);
+            }
+
+            Group {
+                Anchor: (Bottom: 6, Height: 1);
+                Background: #ffffff(0.08);
+            }
+
+            Label {
+                Anchor: (Height: 20, Top: 8, Bottom: 4);
+                Text: "Selected";
+                Style: (FontSize: 12, RenderBold: true, TextColor: #7a8ba3);
+            }
+
+            Group #Staged {
+                LayoutMode: TopScrolling;
+                ScrollbarStyle: $Common.@DefaultScrollbarStyle;
+                FlexWeight: 1;
+                Anchor: (Bottom: 16);
+            }
+
+            Group {
+                LayoutMode: Center;
+                Anchor: (Top: 8);
+
+                Group #ConfirmButton {}
+
+                Group #CancelButton {}
+            }
+        }
+    }
+}

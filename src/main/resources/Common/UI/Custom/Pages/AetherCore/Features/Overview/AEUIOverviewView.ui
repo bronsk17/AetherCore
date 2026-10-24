@@ -1,0 +1,24 @@
+$Common = "../../../../Common.ui";
+
+Group #View {
+    LayoutMode: Top;
+    FlexWeight: 1;
+
+    Group #Cards {
+        LayoutMode: Left;
+        Anchor: (Height: 100, Bottom: 16);
+    }
+
+    Group #ConsoleCard {
+        LayoutMode: Top;
+        FlexWeight: 1;
+        Background: #ffffff(0.04);
+        Padding: (Full: 12);
+
+        Group #Console {
+            LayoutMode: TopScrolling;
+            ScrollbarStyle: $Common.@DefaultScrollbarStyle;
+            FlexWeight: 1;
+        }
+    }
+}

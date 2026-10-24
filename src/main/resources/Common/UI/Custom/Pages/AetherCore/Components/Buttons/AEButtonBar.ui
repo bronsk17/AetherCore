@@ -1,0 +1,12 @@
+Group #Bar {
+    LayoutMode: Left;
+    Anchor: (Height: 44, Bottom: 12, Right: 12);
+
+    Group #Spacer {
+        FlexWeight: 1;
+    }
+
+    Group #Buttons {
+        LayoutMode: Left;
+    }
+}

@@ -1,0 +1,23 @@
+Group #Tag {
+    LayoutMode: Left;
+    Anchor: (Height: 40, Bottom: 4);
+    Background: #2a3a52(0.6);
+    Padding: (Horizontal: 8);
+
+    Group #AvatarBox {
+        Anchor: (Width: 28, Height: 28, Right: 8);
+        Background: #22344a;
+
+        Label #Initial {
+            Anchor: (Full: 0);
+            Text: "?";
+            Style: (HorizontalAlignment: Center, VerticalAlignment: Center, FontSize: 13, RenderBold: true);
+        }
+    }
+
+    Label #Name {
+        Anchor: (Right: 8);
+        Text: "Player";
+        Style: (FontSize: 13, VerticalAlignment: Center, TextColor: #ffffff(0.9));
+    }
+}

@@ -1,0 +1,47 @@
+$Common = "../../../../Common.ui";
+
+Group #DetailsShell {
+    LayoutMode: Top;
+    FlexWeight: 1;
+
+    Group #Title {
+        LayoutMode: CenterMiddle;
+        Anchor: (Height: 32, Bottom: 24);
+
+        Label #Main {
+            Text: "Admin Tools";
+            Style: (FontSize: 18, RenderBold: true, TextColor: #ffffff(0.9), VerticalAlignment: Center);
+        }
+    }
+
+    Group #Grid {
+        LayoutMode: TopScrolling;
+        ScrollbarStyle: $Common.@DefaultScrollbarStyle;
+        FlexWeight: 1;
+        Anchor: (Bottom: 12);
+
+        Group #Vanish {
+            Anchor: (Height: 100, Bottom: 18);
+        }
+
+        Group #Gamemode {
+            Anchor: (Height: 100, Bottom: 18);
+        }
+
+        Group #Spectator {
+            Anchor: (Height: 100, Bottom: 18);
+        }
+
+        Group #FreeCam {
+            Anchor: (Height: 100, Bottom: 18);
+        }
+
+        Group #Speed {
+            Anchor: (Height: 100, Bottom: 18);
+        }
+
+        Group #FlySpeed {
+            Anchor: (Height: 100);
+        }
+    }
+}

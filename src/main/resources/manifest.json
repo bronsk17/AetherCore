@@ -1,0 +1,19 @@
+{
+  "Group": "AetherCore",
+  "Name": "AetherCore",
+  "Version": "0.1",
+  "Description": "AetherCore framework for hytale",
+  "Authors": [
+    {
+      "Name": "Bronsk"
+    }
+  ],
+  "Main": "me.bronsk.aethercore.AetherPlugin",
+  "ServerVersion": "=0.6.2",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": true,
+  "SubPlugins": []
+}

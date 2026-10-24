@@ -1,0 +1,6 @@
+$Common = "../../../../Common.ui";
+
+$Common.@SecondaryTextButton #Button {
+    @Anchor = (Bottom: 6);
+    @Text = "Tab";
+}

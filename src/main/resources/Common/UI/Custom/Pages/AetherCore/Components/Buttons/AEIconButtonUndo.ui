@@ -1,0 +1,12 @@
+$Common = "../../../../Common.ui";
+
+Button #Button {
+    Anchor: (Width: 40, Height: 40, Right: 6);
+    Style: $Common.@SecondaryButtonStyle;
+
+    Group #Icon {
+        Anchor: (Full: 0);
+        Padding: (Full: 10);
+        Background: (TexturePath: "UndoIcon.png");
+    }
+}

@@ -1,0 +1,29 @@
+Group #Row {
+    LayoutMode: Left;
+    Anchor: (Height: 60, Bottom: 6);
+    Background: #ffffff(0.04);
+    Padding: (Horizontal: 12);
+
+    Group #Text {
+        LayoutMode: Top;
+        FlexWeight: 1;
+        Anchor: (Top: 12, Bottom: 12);
+
+        Label #Title {
+            Anchor: (Height: 18);
+            Text: "Permission";
+            Style: (FontSize: 13, RenderBold: true, TextColor: #ffffff(0.9), VerticalAlignment: Center);
+        }
+
+        Label #Description {
+            Anchor: (Height: 16, Top: 2);
+            Text: "";
+            Style: (FontSize: 12, TextColor: #7a8ba3, VerticalAlignment: Center);
+        }
+    }
+
+    Group #Trailing {
+        LayoutMode: CenterMiddle;
+        Anchor: (Left: 12);
+    }
+}

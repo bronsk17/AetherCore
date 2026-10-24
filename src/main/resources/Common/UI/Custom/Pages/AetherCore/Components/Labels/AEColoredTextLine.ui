@@ -1,0 +1,4 @@
+Group #Line {
+    LayoutMode: Left;
+    Anchor: (Height: 20, Bottom: 2);
+}

@@ -1,0 +1,6 @@
+$Common = "../../../../Common.ui";
+
+DropdownBox #World {
+    Anchor: (Width: 300, Height: 38);
+    Style: $Common.@DefaultDropdownBoxStyle;
+}

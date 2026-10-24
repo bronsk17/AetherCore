@@ -1,0 +1,14 @@
+Group #Section {
+    LayoutMode: Top;
+    Anchor: (Bottom: 20);
+
+    Label #Title {
+        Anchor: (Height: 24, Bottom: 8);
+        Text: "Section";
+        Style: (FontSize: 15, RenderBold: true, TextColor: #ffffff(0.85));
+    }
+
+    Group #Content {
+        LayoutMode: Top;
+    }
+}

@@ -1,0 +1,7 @@
+$Common = "../../../../Common.ui";
+
+$Common.@MultilineTextField #Input {
+    @Anchor = (Height: 150);
+    FlexWeight: 1;
+    AutoGrow: false;
+}

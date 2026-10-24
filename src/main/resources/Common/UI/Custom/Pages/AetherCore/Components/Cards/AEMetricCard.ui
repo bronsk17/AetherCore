@@ -1,0 +1,21 @@
+Group #Card {
+    LayoutMode: CenterMiddle;
+    FlexWeight: 1;
+    Background: #ffffff(0.04);
+    Anchor: (Right: 12);
+
+    Group #Text {
+        LayoutMode: Top;
+
+        Label #Value {
+            Anchor: (Height: 34);
+            Text: "";
+            Style: (FontSize: 26, RenderBold: true, TextColor: #ffffff(0.95), HorizontalAlignment: Center, VerticalAlignment: Center);
+        }
+
+        Group #Label {
+            LayoutMode: CenterMiddle;
+            Anchor: (Height: 20, Top: 4);
+        }
+    }
+}

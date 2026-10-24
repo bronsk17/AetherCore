@@ -1,0 +1,10 @@
+Group #Box {
+    Anchor: (Full: 0);
+    Background: #22344a;
+
+    Label #Initial {
+        Anchor: (Full: 0);
+        Text: "?";
+        Style: (HorizontalAlignment: Center, VerticalAlignment: Center, FontSize: 192, RenderBold: true);
+    }
+}

@@ -1,0 +1,13 @@
+Group #Row {
+    LayoutMode: Left;
+    Anchor: (Height: 28, Bottom: 4);
+
+    Group #Select {
+        Anchor: (Width: 28, Height: 28);
+    }
+
+    Group #Content {
+        LayoutMode: Top;
+        FlexWeight: 1;
+    }
+}

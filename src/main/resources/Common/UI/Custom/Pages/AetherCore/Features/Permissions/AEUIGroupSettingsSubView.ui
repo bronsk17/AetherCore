@@ -1,0 +1,19 @@
+$Common = "../../../../Common.ui";
+
+Group #Grid {
+    LayoutMode: TopScrolling;
+    ScrollbarStyle: $Common.@DefaultScrollbarStyle;
+    FlexWeight: 1;
+
+    Group #Prefix {
+        Anchor: (Height: 176, Bottom: 18);
+    }
+
+    Group #Suffix {
+        Anchor: (Height: 176, Bottom: 18);
+    }
+
+    Group #Priority {
+        Anchor: (Height: 90);
+    }
+}

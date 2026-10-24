@@ -1,0 +1,15 @@
+Group #Shell {
+    LayoutMode: Top;
+    FlexWeight: 1;
+
+    Label #Title {
+        Anchor: (Height: 32, Bottom: 16);
+        Text: "";
+        Style: (FontSize: 18, RenderBold: true, TextColor: #ffffff(0.9), HorizontalAlignment: Center, VerticalAlignment: Center);
+    }
+
+    Group #Content {
+        LayoutMode: Top;
+        FlexWeight: 1;
+    }
+}

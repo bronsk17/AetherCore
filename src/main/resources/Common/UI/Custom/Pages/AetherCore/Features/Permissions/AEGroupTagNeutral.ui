@@ -1,0 +1,15 @@
+Button #Tag {
+    LayoutMode: Left;
+    Anchor: (Height: 36, Bottom: 4);
+    Padding: (Horizontal: 12);
+    Style: (
+        Default: (Background: #2a3a52(0.6)),
+        Hovered: (Background: #2a3a52(0.85))
+    );
+
+    Label #Name {
+        Anchor: (Full: 0);
+        Text: "Group";
+        Style: (FontSize: 13, VerticalAlignment: Center, TextColor: #ffffff(0.9));
+    }
+}

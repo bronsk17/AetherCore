@@ -1,0 +1,5 @@
+Label #Message {
+    Anchor: (Full: 0);
+    Text: "Nothing to show";
+    Style: (HorizontalAlignment: Center, VerticalAlignment: Center);
+}

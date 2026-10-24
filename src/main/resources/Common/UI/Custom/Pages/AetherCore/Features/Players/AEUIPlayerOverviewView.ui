@@ -1,0 +1,6 @@
+Group #View {
+    LayoutMode: Top;
+    FlexWeight: 1;
+
+    Group #Details {}
+}

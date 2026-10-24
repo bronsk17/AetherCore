@@ -1,0 +1,56 @@
+$Common = "../../../../Common.ui";
+
+Group #DetailsShell {
+    LayoutMode: Top;
+    FlexWeight: 1;
+
+    Group #Title {
+        LayoutMode: CenterMiddle;
+        Anchor: (Height: 32, Bottom: 24);
+
+        Label #Main {
+            Text: "";
+            Style: (FontSize: 18, RenderBold: true, TextColor: #ffffff(0.9), VerticalAlignment: Center);
+        }
+    }
+
+    Group #Grid {
+        LayoutMode: TopScrolling;
+        ScrollbarStyle: $Common.@DefaultScrollbarStyle;
+        FlexWeight: 1;
+        Anchor: (Bottom: 12);
+
+        Group #Format {
+            Anchor: (Height: 176, Bottom: 18);
+        }
+
+        Group #ServerJoin {
+            Anchor: (Height: 176, Bottom: 18);
+        }
+
+        Group #PlayerJoin {
+            Anchor: (Height: 176, Bottom: 18);
+        }
+
+        Group #Leave {
+            Anchor: (Height: 176, Bottom: 18);
+        }
+
+        Group #FirstJoin {
+            Anchor: (Height: 176, Bottom: 18);
+        }
+
+        Group #Broadcast {
+            Anchor: (Height: 176);
+        }
+    }
+
+    Group #Footer {
+        LayoutMode: Right;
+        Anchor: (Height: 44, Top: 12);
+
+        Group #SaveButton {}
+
+        Group #CancelButton {}
+    }
+}

@@ -1,0 +1,16 @@
+Group #Row {
+    LayoutMode: Left;
+    Anchor: (Height: 26, Bottom: 4);
+
+    Label #Label {
+        Anchor: (Width: 120);
+        Text: "Label";
+        Style: (FontSize: 13, TextColor: #7a8ba3, VerticalAlignment: Center);
+    }
+
+    Label #Value {
+        FlexWeight: 1;
+        Text: "Value";
+        Style: (FontSize: 13, TextColor: #ffffff(0.9), VerticalAlignment: Center);
+    }
+}

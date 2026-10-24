@@ -1,0 +1,118 @@
+$Common = "../../../../Common.ui";
+
+Group #DetailsShell {
+    LayoutMode: Top;
+    FlexWeight: 1;
+
+    Group #Title {
+        LayoutMode: CenterMiddle;
+        Anchor: (Height: 32, Bottom: 24);
+
+        Label #Main {
+            Text: "";
+            Style: (FontSize: 18, RenderBold: true, TextColor: #ffffff(0.9), VerticalAlignment: Center);
+        }
+    }
+
+    Group #Details {
+        LayoutMode: TopScrolling;
+        ScrollbarStyle: $Common.@DefaultScrollbarStyle;
+        FlexWeight: 1;
+
+        Group {
+            LayoutMode: Left;
+            Anchor: (Bottom: 12, Height: 36);
+
+            Label {
+                Anchor: (Width: 90);
+                Text: "Code";
+                Style: (FontSize: 13, TextColor: #96a9be, VerticalAlignment: Center);
+            }
+
+            Group #CodeRow {
+                LayoutMode: Left;
+                FlexWeight: 1;
+            }
+        }
+
+        Group {
+            LayoutMode: Left;
+            Anchor: (Bottom: 16, Height: 36);
+
+            Label {
+                Anchor: (Width: 90);
+                Text: "Description";
+                Style: (FontSize: 13, TextColor: #96a9be, VerticalAlignment: Center);
+            }
+
+            Group #DescriptionInput {
+                LayoutMode: Left;
+                FlexWeight: 1;
+            }
+        }
+
+        Group {
+            Anchor: (Bottom: 8, Height: 1);
+            Background: #ffffff(0.08);
+        }
+
+        Group #Translations {
+            LayoutMode: Top;
+            Anchor: (Top: 12, Height: 300);
+
+            Group {
+                LayoutMode: Left;
+                Anchor: (Bottom: 8, Height: 38);
+
+                Label {
+                    Anchor: (Width: 90);
+                    Text: "Language";
+                    Style: (FontSize: 13, TextColor: #96a9be, VerticalAlignment: Center);
+                }
+
+                Group #LangSelector {
+                    LayoutMode: Left;
+                }
+            }
+
+            Group #MessageInput {
+                LayoutMode: Left;
+                Anchor: (Height: 150, Bottom: 14);
+            }
+
+            Group {
+                LayoutMode: Left;
+                Anchor: (Bottom: 6, Height: 18);
+
+                Label {
+                    Text: "Preview";
+                    Style: (FontSize: 12, TextColor: #96a9be, VerticalAlignment: Center);
+                }
+            }
+
+            Group #PreviewCard {
+                LayoutMode: Top;
+                Background: #ffffff(0.04);
+                Padding: (Full: 10);
+                Anchor: (Height: 66);
+
+                Group #Preview {
+                    LayoutMode: TopScrolling;
+                    ScrollbarStyle: $Common.@DefaultScrollbarStyle;
+                    FlexWeight: 1;
+                }
+            }
+        }
+    }
+
+    Group #Footer {
+        LayoutMode: Right;
+        Anchor: (Height: 44, Top: 12);
+
+        Group #DeleteButton {}
+
+        Group #SaveButton {}
+
+        Group #CancelButton {}
+    }
+}

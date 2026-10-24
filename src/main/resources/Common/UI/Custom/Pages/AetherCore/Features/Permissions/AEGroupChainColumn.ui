@@ -1,0 +1,4 @@
+Group #Column {
+    LayoutMode: Top;
+    Anchor: (Right: 24);
+}

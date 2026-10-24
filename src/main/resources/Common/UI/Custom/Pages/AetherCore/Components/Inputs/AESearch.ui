@@ -1,0 +1,5 @@
+$Common = "../../../../Common.ui";
+
+$Common.@TextField #SearchInput {
+    @Anchor = (Width: 220);
+}

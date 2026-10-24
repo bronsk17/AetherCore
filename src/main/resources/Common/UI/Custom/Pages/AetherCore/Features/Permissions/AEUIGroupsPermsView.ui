@@ -1,0 +1,24 @@
+Group #View {
+    LayoutMode: Top;
+    FlexWeight: 1;
+
+    Group #Bar {
+        LayoutMode: Left;
+        Anchor: (Height: 44, Bottom: 16, Right: 12);
+
+        Group #ViewTabs {
+            LayoutMode: CenterMiddle;
+        }
+
+        Group #Spacer {
+            FlexWeight: 1;
+        }
+
+        Group #AddButton {}
+    }
+
+    Group #Content {
+        LayoutMode: Top;
+        FlexWeight: 1;
+    }
+}
