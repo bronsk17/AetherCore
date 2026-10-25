@@ -1,3 +1,4 @@
+Discord: bronsk
  [!WARNING]
 > **This project is unmaintained, untested, and provided as-is.**
 
@@ -116,6 +117,3 @@ ui/
   components/   reusable widgets: tables, popups, buttons, cards, inputs
   features/     one package per admin-panel tab
 ```
-## License
-
-Not yet decided — a `LICENSE` file will be added before this repository is treated as open for reuse. Until then, please don't redistribute without asking.
